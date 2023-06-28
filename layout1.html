@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<style>
+
+:root
+{
+	--w:100%;
+
+}
+
+
+	*
+	{
+		margin:0 auto;
+		padding:0;
+	}
+
+ul
+{
+	list-style: none;
+	display: flex;
+	height:50px;
+}
+ul li
+{
+	flex:1;
+	text-align: center;
+	border:1px solid gray;
+}
+ul li a
+{
+	background:linear-gradient(gray,black);
+	float:left;
+	width:100%;
+	height: 50px;
+	line-height: 50px;
+	color:white;
+}
+
+.navbar
+{
+	width:100%;
+	height:50px;
+	position: fixed;
+	z-index: 999;
+}
+
+/* navbar finished----------------------------------------- */
+
+.box
+{
+	width:var(--w);
+	height:800px;
+	border:1px solid gray;
+	background-size: cover;
+	background-attachment:fixed;
+}
+.box section
+{
+	width:var(--w);
+	height:500px;
+	/*background-color:orange;*/
+	/*opacity:0.1;*/
+	color:white;
+	font-size:80px;
+	padding:20px;
+	text-align: center;
+	background-color:rgba(0,0,0,0.5);
+
+}
+
+.img1
+{
+	background-image:url('https://mobimg.b-cdn.net/v3/fetch/05/05eeb93a2e41734ecb6044146351f11e.jpeg');
+}
+.img2
+{
+	background-image:url('https://images.unsplash.com/photo-1559583985-c80d8ad9b29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMDY1OTc2fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
+}
+.img3
+{
+	background-image:url('https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-thumb.jpg');
+}
+.img4
+{
+	background-image:url('https://marketplace.canva.com/EAE-xnqWvJk/1/0/1600w/canva-retro-smoke-and-round-light-desktop-wallpapers-JLofAI27pCg.jpg');
+}
+
+.mt
+{
+	margin-top:50px;
+}
+.pt
+{
+	padding-top:50px;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar">
+	<ul>
+		<li><a href="#home">home 1</a></li>
+		<li><a href="#about">home 2</a></li>
+		<li><a href="#contact">home 3</a></li>
+		<li><a href="#service">home 4</a></li>
+
+	</ul>
+</nav>
+<!-- end of nav row--------------------------------------------- -->
+
+<div class="box img1 pt" id="home">
+	<section>
+		web page design
+	</section>
+
+
+</div>
+<div class="box img2" id="about">
+	<section>
+		web page design
+	</section>
+</div>
+<div class="box img3" id="contact">
+	<section>
+		web page design
+	</section>
+</div>
+<div class="box img4" id="service">
+	<section>
+		web page design
+	</section>
+</div>
+
+
+
+</body>
+</html>
